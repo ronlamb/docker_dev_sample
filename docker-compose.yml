@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  dev:
+    image: devops
+    build: .
+    environment:
+      DISPLAY: $DISPLAY
+    volumes:
+      - homedir:/home/docker
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    tty: true
+
+
+volumes:
+  homedir:
+    external: false

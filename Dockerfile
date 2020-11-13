@@ -32,8 +32,8 @@ RUN add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vs
 RUN apt-get -y update \
  && apt-get -y --no-install-recommends install \
     libx11-xcb1 x11-apps libasound2 libxcb-dri3-0 \
-    xterm \
- && apt-get -y install code \
+    libxtst6 xterm \
+ && apt-get -y install --no-install-recommends code \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
@@ -50,3 +50,6 @@ RUN useradd -m ${USER} --uid=${UID} && echo "${USER}:${PW}" | chpasswd \
 
 USER ${UID}:${GID}
 WORKDIR /home/${USER}
+
+COPY --chown=${USER}:${USER} home/* /home/${USER}
+VOLUME /home/${USER}
