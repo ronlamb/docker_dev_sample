@@ -11,7 +11,7 @@ now use docker to eliminate the need for four different VM's.
 
 Right now I am basically using it to learn Python.
 
-This also allows me to practive tuning a docker container.
+This also allows me to practice tuning a docker container.
 
 # Contents
 This container contains the following
@@ -31,3 +31,8 @@ Builds the container.
 
 ## run.sh
 Runs the container.
+
+# Notes:
+This currently is built under ubuntu.
+
+Future enhancements is to attemp build it under alpine for hopefully smaller size.
