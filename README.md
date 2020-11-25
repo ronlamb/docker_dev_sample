@@ -37,4 +37,4 @@ This currently is built under ubuntu, to allow easy install of Visual Studio Cod
 
 Problem is the size of the container is fairly large.  
 
-Future enhancements is to attemp build it under alpine for a smaller size
+Future enhancements is to attempt to build it under alpine for a smaller size
