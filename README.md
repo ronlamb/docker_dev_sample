@@ -33,6 +33,8 @@ Builds the container.
 Runs the container.
 
 # Notes:
-This currently is built under ubuntu.
+This currently is built under ubuntu, to allow easy install of Visual Studio Code.
 
-Future enhancements is to attemp build it under alpine for hopefully smaller size.
+Problem is the size of the container is fairly large.  
+
+Future enhancements is to attemp build it under alpine for a smaller size
